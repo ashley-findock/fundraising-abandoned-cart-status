@@ -15,9 +15,9 @@ Deploy to Sandboxes :
 # FinDock for Fundraising: Update Abandoned Gift Transaction 
 For organizations using FinDock for Fundraising, when an individual initiates a donation but doesn't follow through with payment, FinDock will have created a Gift Transaction but marked no payment against it, commonly known as an "abandoned cart."  
 
-This Scheduled Flow is one way of handling these incomplete Gift Transactions where daily this Flow will run and identify Gift Transactions initiated by FinDock that have been in "Pending" Status for at least 24 hours (this is the time period Stripe allows before expiring the checkout session), and if so, update the Status to "Canceled" with a note in the Description of "Abandoned Cart"
+This Scheduled Flow is one way of handling incomplete Gift Transactions where daily this Flow will run and identify Gift Transactions initiated by FinDock that have been in "Pending" Status for at least 24 hours (this is the time period Stripe allows before expiring the checkout session), and if so, update the Status to "Canceled" with a note in the Description of "Abandoned Cart"
 
-Consider adding additional automation, such as a follow up email, task, or notification.
+Consider adding additional automation, such as task, internal notification, or email to the donor to design your own abandoned cart process!
 
 Note: this template is designed for donations using Credit Card as a payment method, you may want to consider other time periods for different payment methods as they have varying settlement times.
 
@@ -41,4 +41,4 @@ When contributing to this repository, please first discuss the change you wish t
 FinDock Labs is a non-supported group in FinDock that releases applications. Despite the name, assistance for any of these applications is not provided by FinDock Support because they are not officially supported features. For a list of these apps, visit the FinDock Labs account on Github.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/ashley-findock/fundraising-abandoned-cart/blob/master/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/ashley-findock/fundraising-abandoned-cart-status/blob/main/LICENSE) file for details
